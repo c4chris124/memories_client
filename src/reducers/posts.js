@@ -1,8 +1,7 @@
 export default (post = [], action) => {
  switch (action.type) {
     case 'FETCH_ALL':
-        return post
- 
+        return action.payload
     default:
         return post
  }
